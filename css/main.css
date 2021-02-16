@@ -1,0 +1,172 @@
+body {
+  background: #fbfbfb;
+  color: #9b7ede;
+  font-family: "Viga", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 543px;
+}
+
+.logo {
+  margin-top: 76px;
+
+  font-size: 80px;
+  line-height: 107px;
+  text-transform: uppercase;
+}
+
+span.primary {
+  color: #9b7ede;
+}
+
+span.secondary {
+  color: #523694;
+}
+
+.upload-area {
+  margin-top: 52px;
+
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #f3f3f3;
+  border: 2px dashed #9b7ede;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.upload-area svg,
+.upload-area span {
+  margin-top: 16px;
+}
+
+.form-hidden {
+  display: none;
+}
+
+.upload-button {
+  margin-top: 40px;
+
+  width: 100%;
+  height: 64px;
+
+  background: #9b7ede;
+  border: 0;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+  background: #523694;
+}
+
+.upload-button:disabled {
+  background: #3a3a3a;
+  cursor: not-allowed;
+}
+
+span.latest-images {
+  margin-top: 32px;
+
+  display: block;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.uploads-grid {
+  margin-top: 16px;
+
+  display: grid;
+  grid-template-columns: 263.5px 263.5px;
+  grid-auto-rows: 148.15px;
+  gap: 16px;
+}
+
+.upload {
+  position: relative;
+
+  width: 263.5px;
+  height: 148.15px;
+
+  border-radius: 12px;
+}
+
+.upload:hover .info {
+  opacity: 1;
+}
+
+.upload img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px;
+
+  object-fit: cover;
+}
+
+.upload .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #754bd5;
+  border-radius: 12px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  z-index: 1;
+}
+
+.upload .info .name {
+  margin-top: 32px;
+
+  width: 232px;
+  height: 24px;
+
+  display: block;
+
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload .info .date {
+  margin-top: 18px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
